@@ -98,50 +98,29 @@
     filter: blur(3px);
 }
 
-.homeSkillsBox {
-    position: relative;
-}
-
-.frontendSkillsBox {
-    background-color: rgba(255, 255, 255, 0.171);
+.homeskillsBox {
+    background-color: hsl(250, 100%, 75%);
     padding: 0 2vmax;
     position: absolute;
     display: flex;
-    flex-direction: row;
-    right: 0;
-    top: 0; /* Adjust as needed */
-}
-
-.backendSkillBox {
-    background-color: rgba(255, 255, 255, 0.171);
-    padding: 0 2vmax;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    right: 0;
-    top: 150px; 
-}
-
-.databaseSkillBox {
-    background-color: rgba(255, 255, 255, 0.171);
-    padding: 0 2vmax;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    right: 0;
-    top: 300px; 
-}
-
-.homeSkillsBox > div {
-    margin-bottom: 20px; 
-}
-
-.homeSkillsBox > div > svg {
+    flex-direction: column;
+    right: -300px;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  .homeskillsBox > svg {
     font-size: 5vmax;
     color: rgb(255, 255, 255);
     transition: all 0.5s;
     margin: 10px;
-}
+  }
+
+  .homeskillsBox > svg:hover {
+    transform: scale(1.5);
+  }
+  
 
 
 @keyframes cubeRotation {
@@ -154,4 +133,22 @@
     to {
         transform: scale(1.2) translate(-10px);
     }
+}
+
+@keyframes homeskillsBoxAnimationOn {
+from {
+    right: -300px;
+}
+to {
+    right: 40px;
+}
+}
+
+@keyframes homeskillsBoxAnimationOff {
+from {
+    right: 40px;
+}
+to {
+    right: -300px;
+}
 }

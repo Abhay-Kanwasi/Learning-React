@@ -125,29 +125,21 @@ const Home = () => {
             <img src="https://i.pinimg.com/564x/90/3b/bb/903bbb31b5ae50326ae7d2eac38c9a33.jpg" alt="Face5" />
           </div>
           <div className="homeCubeSkillsFaces homeCubeSkillsFace6">
-            <img src="https://images8.alphacoders.com/430/430944.jpg" alt="Face6" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg/2560px-CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="Face6" />
           </div>
         </div>
         <div className="cubeShadow"></div>
-        <div className="homeSkillsBox">
-          <div className="frontendSkillsBox">
-            <Typography paddingTop={"30px"} color={"white"}>FRONT-END SKILLS</Typography>
+        <div className="homeskillsBox" id="homeskillsBox">      
             <SiHtml5 />
             <SiCss3 />
             <SiJavascript />
             <SiTailwindcss />
-            <SiReact />
-          </div>
-          <div className="backendSkillBox">
-          <Typography paddingTop={"30px"} color={"white"}>BACK-END SKILLS</Typography>            <SiDjango />
+            <SiReact /> 
             <SiPython />
-            <SiJavascript />
+            <SiDjango />
+            <SiMongodb />
             <SiPostman />
-          </div>
-          <div className="databaseSkillBox">
-          <Typography paddingTop={"50px"} color={"white"}>DATABASES</Typography>            <SiMongodb />
-            <SiPostgresql />
-          </div>
+            <SiPostgresql />          
         </div>
       </div>
     </div>
